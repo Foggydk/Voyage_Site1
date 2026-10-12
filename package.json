@@ -1,0 +1,12 @@
+{
+  "name": "voyage-tour",
+  "private": true,
+  "description": "Вояж-Тур — статический многостраничный сайт",
+  "scripts": {
+    "start": "npx --yes serve .",
+    "server": "npm start --prefix server",
+    "db:check": "node server/check-db.js",
+    "db:seed": "node server/seed.js",
+    "build:pages": "python scripts/build-pages.py"
+  }
+}
